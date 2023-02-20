@@ -14,9 +14,6 @@ nicehash = False
 app = Flask(__name__)
 
 @app.route('/RandomX', methods=['POST'])
-def test():
-    return 'Test POST'
-'''
 def get_data():
     if request.method == 'POST':
         n = int(request.args.get('n'))
@@ -91,4 +88,4 @@ def worker(blob,target,job_id,height,seed_hash,n,p_start,p_step,p_duration):
             list1.append(dict1)
             break
     return list1
-'''
+
